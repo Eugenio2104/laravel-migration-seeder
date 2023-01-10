@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+
+Route::get(uri: '/trains', action: [PageController::class, 'trains'])->name(name: 'trains');

@@ -1,1 +1,24 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+.active a {
+    color: orange;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+.cards {
+    background-color: orange;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+    h1 {
+        cursor: pointer;
+    }
+
+}

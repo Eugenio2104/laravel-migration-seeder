@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('train', function (Blueprint $table) {
+        Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->string('agency', 25);
+            $table->string('agency', 100);
             $table->string('departure_station', 20);
             $table->string('arrival_station', 20);
             $table->time('departure_time');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('train');
+        Schema::dropIfExists('trains');
     }
 };
